@@ -9,11 +9,11 @@
 /* # UTILS */
 
 .container {
-  margin: 0 auto;
-  padding: 0 10px;
-  width: 1000px;
-  max-width: 100%;
+display: flex;
+height: calc(100vh - 120px);
 }
+
+
 
 main{
   height: 839px;
