@@ -13,18 +13,48 @@ display: flex;
 height: calc(100vh - 120px);
 }
 
+/* # MAINE */
 
 
-main{
-  height: 839px;
-}
+/* # SECTION-SIDEBAR */
+
+.sidebar{
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  height:100%;
+  background-color: #000000;
+} 
+
+/* # SECTION MAIN-SECTION */
 
 .main-section{
   display: flex;
+  flex-direction: column;
+  width: calc(100% - 200px) ;
 
 }
 
-footer{
-  height: 120px;
-  background-color: red;
+/* # HEADER MAIN*/
+
+.header-main{
+height: 80px;
+width: 100%;
+background-color: #080b12;
+
 }
+
+/* # MAIN MAIN */
+
+.main-section > .main-main{
+flex: 1 1 100%;
+background-color: #141922;
+}
+
+/* # FOOTER CONTAINER */
+.footer-container{
+height:100px;
+max-width: 100%;
+background-color: #282828;
+}
+
