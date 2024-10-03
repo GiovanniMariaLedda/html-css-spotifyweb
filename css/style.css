@@ -21,17 +21,31 @@ height: calc(100vh - 120px);
 .sidebar{
   display: flex;
   flex-direction: column;
-  width: 200px;
+  width: 50px;
   height:100%;
   background-color: #000000;
 } 
+
+.sidebar-logo{
+  flex-direction: row;
+  justify-content: center;
+}
+
+.logo-small{
+  height: 30px; 
+  width: 30px;
+}
+
+.logo-text{
+display:none;
+}
 
 /* # SECTION MAIN-SECTION */
 
 .main-section{
   display: flex;
   flex-direction: column;
-  width: calc(100% - 200px) ;
+  width:100% ;
 
 }
 
@@ -39,12 +53,15 @@ height: calc(100vh - 120px);
 
 .header-main{
 height: 80px;
-width: 100%;
+max-width: 100%;
 background-color: #080b12;
 
 }
 
 /* # MAIN MAIN */
+.main-section{
+  max-width:100%;
+}
 
 .main-section > .main-main{
 flex: 1 1 100%;
@@ -52,9 +69,65 @@ background-color: #141922;
 }
 
 /* # FOOTER CONTAINER */
+
 .footer-container{
-height:100px;
+height:120px;
 max-width: 100%;
 background-color: #282828;
 }
 
+
+/* MEDIA QUERIES */
+
+/* XS 552PX */
+@media screen and (max-width:552px){
+
+
+
+
+
+  .header-main{
+    background-color: red;
+  }
+}
+
+/* S 639PX */
+@media screen and (min-width:639px){
+  .header-main{
+    background-color: blue;
+  }
+
+
+  
+}
+
+/* MD 878PX */
+@media screen and (min-width:878px){
+
+  .header-main{
+    background-color: green;
+  }
+
+  
+}
+
+/* L 1440PX */
+@media screen and (min-width:1440px){
+
+  .header-main{
+    background-color: orange;
+  }
+
+  
+}
+
+/* HEIGHT 1398PX X 221PX */
+@media screen and (min-width:1398px){
+
+  .header-main{
+    background-color: yellow;
+  }
+
+
+  
+}
