@@ -6,17 +6,46 @@
   padding: 0;
 }
 
-/* # UTILS */
-
 .container {
 display: flex;
 height: calc(100vh - 120px);
 }
+/* ////////////////////
+     Utils
+///////////////////// */
+.d-none{
+  display: none;
+}
+.d-flex{
+  display: flex;
+}
+.d-block{
+  display: block;
+}
+.d-inline-block{
+  display: inline-block;
+}
+.d-inline{
+  display: inline;
+}
 
-/* # MAINE */
+/* ////////////////////
+    debug
+///////////////////// */
+.container .sidebar {
+  border: dashed;
+  background-color: white ;
+}
 
 
-/* # SECTION-SIDEBAR */
+/* ////////////////////
+        MAIN 
+///////////////////// */
+
+
+/* ////////////////////
+    SECTION SIDEBAR
+///////////////////// */
 
 .sidebar{
   display: flex;
@@ -26,19 +55,19 @@ height: calc(100vh - 120px);
   background-color: #000000;
 } 
 
+.sidebar .playlist-load
+.sidebar .playlist-list{
+  display: none;
+}
+
+.sidebar .user{
+  margin-top: auto;
+}
 .sidebar-logo{
   flex-direction: row;
   justify-content: center;
 }
 
-.logo-small{
-  height: 30px; 
-  width: 30px;
-}
-
-.logo-text{
-display:none;
-}
 
 /* ////////////////////
     SECTION MAIN SECTION
@@ -52,10 +81,10 @@ display:none;
 }
 
 /* ////////////////////
-   HEADER MAiN
+   UP MAiN
 ///////////////////// */
 
-.header-main{
+.up-main{
 height: 80px;
 max-width: 100%;
 background-color: #080b12;
@@ -89,67 +118,109 @@ background-color: #282828;
     MEDIA QUERIES
 ///////////////////// */
 
-/* XS 552PX */
+/* SM */
 
-@media screen and (min-width:552px){
+@media screen and (min-width:576px){
   .sidebar{
     width: 250px;
   } 
   
+/* ////////////////////
+     Utils
+///////////////////// */
+.d-sm-none{
+  display: none;
+}
+.d-sm-flex{
+  display: flex;
+}
+.d-sm-block{
+  display: block;
+}
+.d-sm-inline-block{
+  display: inline-block;
+}
+.d-sm-inline{
+  display: inline;
+}
 
 
 
 /* debug */
-  .header-main{
+  .up-main{
     background-color: red;
   }
 }
 
-/* S 639PX */
+/* Tablet md 768PX */
 
-@media screen and (min-width:639px){
+@media screen and (min-width:768px){
 
-
-
-  /* debug */
-  .header-main{
-    background-color: blue;
-  }  
+ /* ////////////////////
+     Utils
+///////////////////// */
+.d-md-none{
+  display: none;
+}
+.d-md-flex{
+  display: flex;
+}
+.d-md-block{
+  display: block;
+}
+.d-md-inline-block{
+  display: inline-block;
+}
+.d-md-inline{
+  display: inline;
 }
 
-/* MD 878PX */
-
-@media screen and (min-width:878px){
-
-
-
 
   /* debug */
-  .header-main{
+  .up-main{
     background-color: green;
   }
 }
 
-/* L 1440PX */
+/* LG 992PX */
 
-@media screen and (min-width:1440px){
+@media screen and (min-width:992px){
 
+/* ////////////////////
+     Utils
+///////////////////// */
+.d-lg-none{
+  display: none;
+}
+.d-lg-flex{
+  display: flex;
+}
+.d-lg-block{
+  display: block;
+}
+.d-lg-inline-block{
+  display: inline-block;
+}
+.d-lg-inline{
+  display: inline;
+}
 
 
   /* debug */
-  .header-main{
+  .up-main{
     background-color: orange;
   }
 }
 
-/* HEIGHT 1398PX X 221PX */
+/* MD-L 1200PX */
 
-@media screen and (min-width:1398px){
+@media screen and (min-width:1200px){
 
 
   /* debug */
-  .header-main{
+  .up-main{
     background-color: yellow;
   }
+
 }
 
