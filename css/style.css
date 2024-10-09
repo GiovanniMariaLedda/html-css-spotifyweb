@@ -60,6 +60,9 @@ height: calc(100vh - 120px);
   display: none;
 }
 
+.sidebar-img{
+  width: 40px;
+}
 .sidebar .user{
   margin-top: auto;
 }
