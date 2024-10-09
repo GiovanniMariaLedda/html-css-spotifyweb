@@ -40,7 +40,9 @@ height: calc(100vh - 120px);
 display:none;
 }
 
-/* # SECTION MAIN-SECTION */
+/* ////////////////////
+    SECTION MAIN SECTION
+///////////////////// */
 
 .main-section{
   display: flex;
@@ -49,7 +51,9 @@ display:none;
 
 }
 
-/* # HEADER MAIN*/
+/* ////////////////////
+   HEADER MAiN
+///////////////////// */
 
 .header-main{
 height: 80px;
@@ -58,17 +62,21 @@ background-color: #080b12;
 
 }
 
-/* # MAIN MAIN */
+/* ////////////////////
+    MAIN
+///////////////////// */
 .main-section{
   max-width:100%;
 }
 
-.main-section > .main-main{
+.main-section > .mid-main{
 flex: 1 1 100%;
 background-color: #141922;
 }
 
-/* # FOOTER CONTAINER */
+/* ////////////////////
+    FOOTER CONTAINER
+///////////////////// */
 
 .footer-container{
 height:120px;
@@ -77,57 +85,71 @@ background-color: #282828;
 }
 
 
-/* MEDIA QUERIES */
+/* ////////////////////
+    MEDIA QUERIES
+///////////////////// */
 
 /* XS 552PX */
-@media screen and (max-width:552px){
+
+@media screen and (min-width:552px){
+  .sidebar{
+    width: 250px;
+  } 
+  
 
 
 
-
-
+/* debug */
   .header-main{
     background-color: red;
   }
 }
 
 /* S 639PX */
+
 @media screen and (min-width:639px){
+
+
+
+  /* debug */
   .header-main{
     background-color: blue;
-  }
-
-
-  
+  }  
 }
 
 /* MD 878PX */
+
 @media screen and (min-width:878px){
 
+
+
+
+  /* debug */
   .header-main{
     background-color: green;
   }
-
-  
 }
 
 /* L 1440PX */
+
 @media screen and (min-width:1440px){
 
+
+
+  /* debug */
   .header-main{
     background-color: orange;
   }
-
-  
 }
 
 /* HEIGHT 1398PX X 221PX */
+
 @media screen and (min-width:1398px){
 
+
+  /* debug */
   .header-main{
     background-color: yellow;
   }
-
-
-  
 }
+
